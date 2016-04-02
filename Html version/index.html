@@ -1,0 +1,58 @@
+<html>
+<head>
+<meta charset='utf-8'>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="js/plupload.full.js"></script>
+        <script src="js/jquery-progressbar.min.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="src/css/Madeleine.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/stylesheet.css">
+        <link rel="stylesheet" href="css/style.css" media="screen">
+        <script src="src/lib/stats.js"></script>
+        <script src="src/lib/detector.js"></script>
+        <script src="src/lib/three.min.js"></script>
+        <script src="src/Madeleine.js"></script>
+<title></title>
+</head>
+<body>
+<div id="header_wrap" class="outer">
+      <header class="inner">
+        <a id="forkme_banner" href="https://github.com/">View on GitHub</a>
+        <h1 id="project_title">Trophy Fabriactor</h1>
+      </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+<div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+      <h2>Trophy</h2>
+        <div id="target"></div>
+        <div style="background-color: #F2F2F2; position: relative;"  class="theme">
+          <h3>Colors</h3>
+           <div class="themeButton dark"     onclick="mad.adaptViewerTheme('dark');"></div>
+           <div class="themeButton blue"     onclick="mad.adaptViewerTheme('blue');"></div>
+           <div class="themeButton green"    onclick="mad.adaptViewerTheme('green');"></div>
+           <div class="themeButton neutral"  onclick="mad.adaptViewerTheme('neutral');"></div>
+           <div class="themeButton orange"   onclick="mad.adaptViewerTheme('orange');"></div>
+           <div class="themeButton yellow"   onclick="mad.adaptViewerTheme('yellow');"></div>
+           <div class="themeButton red"      onclick="mad.adaptViewerTheme('red');"></div>
+           <div class="themeButton purple"  onclick="mad.adaptViewerTheme('purple');"></div>
+        </div>
+    </div>
+  <script>
+      window.onload = function(){
+        mad = new Madeleine({
+          target: 'target',
+          data: 'skull.stl',
+          path: './src'
+        });
+        Lily.ready({
+          target: 'target',
+          file: 'files',
+          path: './src'
+        });
+      }; 
+    </script>
+ </body>
+</html>
+   
